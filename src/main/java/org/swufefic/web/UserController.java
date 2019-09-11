@@ -23,4 +23,10 @@ public class UserController {
         User user = userRepository.getOne(id);
         return user;
     }
+
+    @RequestMapping(value = "/{name}", method = RequestMethod.GET)
+    public User getUserByName(@PathVariable String name) {
+        User user = userRepository.findByName(name);
+        return user;
+    }
 }

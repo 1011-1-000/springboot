@@ -2,4 +2,8 @@
 
 - initialize the framework
 - add multiple env configuration
-- db connection
+- db connection and intergrate jpa
+- unit test
+- swagger
+- global exception
+- logger
